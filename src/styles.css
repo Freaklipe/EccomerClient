@@ -1,0 +1,202 @@
+/* Google Font Cinzel + Fauna 400 */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Fauna+One&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  margin: auto;
+}
+
+/* Navbar */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: black;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+}
+
+.navbar-main-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-second-box {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  z-index: 2;
+}
+
+/* CartMenu */
+.cartmenu-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  overflow: auto;
+}
+
+.cartmenu-modal {
+  position: fixed;
+  right: 0%;
+  bottom: 0%;
+  width: max(400px, 30%);
+  height: 100%;
+  background-color: white;
+}
+
+.cartmenu-modal-sub-box {
+  padding: 30px;
+  overflow: auto;
+  height: 100%;
+}
+
+.cartmenu-img {
+  width: 123px;
+  height: 164px;
+}
+
+.cartmenu-amount {
+  display: flex;
+  align-items: center;
+}
+
+/* Carousel */
+.carousel-img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  background-attachment: fixed;
+}
+
+.carousel-box {
+  color: white;
+  padding: 20px;
+  border-radius: 1px;
+  text-align: left;
+  background-color: rgb(0, 0, 0, 0.4);
+  position: absolute;
+  top: 46%;
+}
+
+/* Item */
+.item-img{
+  /* width: 300px; */
+  width: auto;
+  height: 400px;
+  cursor: pointer;
+}
+
+.item-box-a {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  width: 100%;
+  padding: 0 5%;
+}
+
+.item-box-aa {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-box-aaa {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+}
+
+/* ShoppingList */
+.shoppingList-container {
+  width: 80%;
+  margin: 80px auto;
+}
+
+.shoppingList-box {
+  margin: 0% auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: space-around;
+  row-gap: 20px;
+  column-gap: 1.33%;
+}
+
+/* ItemDetails */
+.itemDetails-container {
+  width: 80%;
+  margin: 80px auto;
+}
+
+.itemDetails-box-a {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+}
+
+.itemDetails-box-b {
+  margin: 20px 0;
+}
+
+.itemDetails-box-c {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+}
+
+.itemDetails-box-d {
+  margin-top: 50px;
+  width: 100%;
+}
+
+/* Subscribe */
+.subscribe-container {
+  width: 80%;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.subscribe-box {
+  padding: 2px 4px;
+  margin: 15px auto;
+  display: flex;
+  align-items: center;
+  width: 75%;
+  background-color: #f2f2f2;
+}
+
+/* Footer */
+.footer-container {
+  margin-top: 70px;
+  padding: 40px 0;
+}
+
+.footer-main-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 'clamp(20%, 30%, 40%)'; /* No olvidar que no se maneja */
+}
+
